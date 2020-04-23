@@ -28,6 +28,9 @@ class Homescreen extends React.Component {
        <Image source ={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSn0uQIyp8rEsqMYatm6_YJkc4o7NzbPEvfj9p_mCpeFQObvxkF&usqp=CAU'}}
  style={{ height: 300, width: 300, marginTop: -10, }}
  ></Image>
+<Text style={styles.text}>
+Find your Perfect Home
+</Text>
         <TouchableHighlight>
  <View style={styles.touchableButton1}>
                         <Text style={styles.buttonText}>
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
 
   text: {
     
-    fontSize: 8,
+    fontSize: 25,
     fontWeight:'bold',
     justifyContent: 'center',
     alignItems: 'center',
