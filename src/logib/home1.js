@@ -28,19 +28,18 @@ class Home extends React.Component {
 
        
         <View style={styles.touchableButton2}>
-        <Text style={styles.buttonText}
+        <Text style={styles.buttonText}>
  Enter ZIP Code: 
  </Text>
  </View>
 
  View style={styles.touchableButton3}>
-        <Text style={styles.buttonText}
+        <Text style={styles.buttonText}>
  Radius: 
  </Text>
  </View>
 
-
-      </View>
+ </View>
     );
   }
 }
