@@ -32,15 +32,15 @@ class Home2 extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
-        <TouchableHighlight>
+            
+  <TouchableHighlight>
  <View style={styles.button2}>
                         <Text style={styles.buttonText}>
                             150k-300k
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            
 
 <TouchableHighlight>
  <View style={styles.button3}>
@@ -49,7 +49,7 @@ class Home2 extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            
 
 <TouchableHighlight>
  <View style={styles.button4}>
@@ -61,7 +61,7 @@ class Home2 extends React.Component {
             </View>
 
 
-      </View>
+      
     );
   }
 }
