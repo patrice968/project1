@@ -23,8 +23,8 @@ class Home extends React.Component {
   render() {
     return (
 
-
-      <View style={styles.house1Container}>
+<View style={styles.container}>
+      
 
        
         <View style={styles.touchableButton2}>
@@ -39,7 +39,7 @@ class Home extends React.Component {
  </Text>
  </View>
 
- </View>
+ 
     );
   }
 }
@@ -50,21 +50,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
   },
-  house1ontainer: {
-    flex: 1,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-  },
-  touchableButton1: {
-        backgroundColor: 'blue',
-        height: 40,
-        width: 200,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
-         borderRadius: 10,
-  }, 
+  
   touchableButton2: {
         backgroundColor: 'green',
         height: 40,
