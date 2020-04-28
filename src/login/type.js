@@ -32,7 +32,7 @@ class Type extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            
         <TouchableHighlight>
  <View style={styles.button2}>
                         <Text style={styles.buttonText}>
@@ -40,7 +40,7 @@ class Type extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            
 
 <TouchableHighlight>
  <View style={styles.button3}>
@@ -49,7 +49,7 @@ class Type extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            
 
 <TouchableHighlight>
  <View style={styles.button4}>
@@ -61,7 +61,7 @@ class Type extends React.Component {
             </View>
 
 
-      </View>
+      
     );
   }
 }
