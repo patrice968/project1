@@ -20,24 +20,78 @@ class Home extends React.Component {
 
   
 
-  render() {
-    return (
+state = {
+text: '',
+zip:'',
+radius:'',
+};
+render() {
+return (
 
 <View style={styles.container}>
-      
 
-       
-        <View style={styles.touchableButton2}>
-        <Text style={styles.buttonText}>
- Enter ZIP Code: 
- </Text>
- </View>
 
- View style={styles.touchableButton3}>
-        <Text style={styles.buttonText}>
- Radius: 
- </Text>
- </View>
+<View style={styles.bar}>
+
+<TextInput
+style={styles.textInput}
+onChangeText={(zip) =>
+this.setState({zip})}
+value={this.state.zip}
+/>
+<Text style={styles.title}>
+
+ZIP Code
+
+
+
+
+
+</Text>
+
+</View>
+
+
+
+
+
+
+<View style={styles.bar}>
+
+<TextInput
+style={styles.textInput}
+onChangeText={(radius) =>
+this.setState({radius})}
+value={this.state.radius}
+/>
+<Text style={styles.title}>
+
+Radius
+
+
+
+
+
+</Text>
+
+</View>
+
+
+
+
+
+
+
+<TouchableHighlight
+onPress={() => this.props.navigation.navigate('Home2')}
+>
+<View style={styles.touchableButton1}>
+<Text style={styles.buttonText}>
+Continue
+</Text>
+</View>
+</TouchableHighlight>
+</View>
 
  
     );
@@ -49,34 +103,26 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bar: {
+  flex: 1, 
+  flexDirection: 'row', 
+  alignItems: 'center', 
+  justifyContent: 'center', 
   },
   
-  touchableButton2: {
-        backgroundColor: 'green',
-        height: 40,
-        width: 200,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
-         borderRadius: 10,
-  }, 
-  touchableButton3: {
-        backgroundColor: 'green',
-        height: 40,
-        width: 200,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
-         borderRadius: 10,
-  }, 
-  buttonText: {
-     
-        color: 'black',
-        fontSize: 14,
-        fontWeight:'bold',
-  },
+textInput: {
+  width: 200,
+  heigh: 30, 
+  borderRadius:
+  20, 
+  borderWidth: 1, 
+  color: 'black', 
+  fontSize: 15, 
+}, 
+
+
 
 });
 
