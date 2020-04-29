@@ -31,16 +31,17 @@ class Homescreen extends React.Component {
 <Text style={styles.text}>
 Find your Perfect Home
 </Text>
-        <TouchableHighlight>
- <View style={styles.touchableButton1}>
-                        <Text style={styles.buttonText}>
-                            Continue
-                        </Text>
-                    </View>
-                </TouchableHighlight>
-            </View>
+        <TouchableHighlight
+onPress={() => this.props.navigation.navigate('Home1')}
+>
+<View style={styles.touchableButton1}>
+<Text style={styles.buttonText}>
+GET STARTED
+</Text>
+</View>
+</TouchableHighlight>
 
- 
+ </View>
 
  
 
