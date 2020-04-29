@@ -141,12 +141,20 @@ Est. Mortgage $748/mo
           </Text>
                  </View> 
                   
+
+
+
+
+<TouchableHighlight
+onPress={() => this.props.navigation.navigate('Image2')}
+>
+<View style={styles.touchableButton1}>
+<Text style={styles.buttonText}>
+Continue
+</Text>
 </View>
-
-
-
-
-
+</TouchableHighlight>
+</View>
 
 
 
