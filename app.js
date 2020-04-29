@@ -8,7 +8,7 @@ import Home from './src/login/home1.js';
 import Home2 from './src/login/home2.js';
 import Type from './src/login/type.js';
 import Image1 from './src/login/image.js';
-
+import Image2 from './src/login/image2.js';
 
 
 const RootStack = createStackNavigator(
@@ -20,6 +20,7 @@ const RootStack = createStackNavigator(
   Home2:{screen: Home2}, 
   Type:{screen: Type},
   Image:{screen: Image1},
+  Image2:{screen: Image2},
 },
 {
     initialRouteName: 'Home',
