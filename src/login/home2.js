@@ -32,7 +32,13 @@ class Home2 extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            
+
+
+
+
+
+
+
   <TouchableHighlight>
  <View style={styles.button2}>
                         <Text style={styles.buttonText}>
@@ -58,10 +64,28 @@ class Home2 extends React.Component {
                         </Text>
                     </View>
                 </TouchableHighlight>
-            </View>
+            <TouchableHighlight
+onPress={() => this.props.navigation.navigate('Type')}
+>
+<View style={styles.touchableButton1}>
+<Text style={styles.buttonText}>
+Continue
+</Text>
+</View>
+</TouchableHighlight>
+</View>
 
 
       
+
+
+
+
+
+
+
+
+
     );
   }
 }
@@ -78,8 +102,8 @@ button1: {
         width: 200,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
+        marginTop: 30,
+        marginBottom: 30,
          borderRadius: 10,
   }, 
   button2: {
@@ -88,8 +112,8 @@ button1: {
         width: 200,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
+        marginTop: 30,
+        marginBottom: 30,
          borderRadius: 10,
   }, 
   button3: {
@@ -98,8 +122,8 @@ button1: {
         width: 200,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
+        marginTop: 30,
+        marginBottom: 30,
          borderRadius: 10,
   },
   button4: {
@@ -108,8 +132,8 @@ button1: {
         width: 200,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 100,
-        marginBottom: 50,
+        marginTop: 30,
+        marginBottom: 30,
          borderRadius: 10,
   }, 
   buttonText: {
