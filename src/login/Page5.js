@@ -29,7 +29,7 @@ class Page5 extends React.Component {
  style={{ height: 300, width: 300, marginTop: -10, }}
  ></Image>
 <Text style={styles.text}>
-Excellent Choice
+Thank You For Your Buisness
 </Text>
         <TouchableHighlight
 onPress={() => this.props.navigation.navigate('Homescreen')}
