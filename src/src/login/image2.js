@@ -11,7 +11,7 @@ import {
   Button,
   Image,
   TouchableHighlight,
-  ImageBackground,Platform,Animated,Dimensions
+  ImageBackground,Platform,Animated,Dimensions,ScrollView,
 } from 'react-native';
 
 let deviceHeight = Dimensions.get('window').height;
@@ -25,7 +25,7 @@ class Image2 extends React.Component {
     return (
       <View style={styles.container}>
         {/*Login page screen layout here*/}
-    
+    <ScrollView>
                 <View style={styles.itemContainer}>
                   <View style={styles.card}>
   <View style={styles.bar}>
@@ -141,9 +141,19 @@ Est. Mortgage $1,600/mo
           </Text>
                  </View> 
                   
+
+</ScrollView>
+
+<TouchableHighlight
+onPress={() => this.props.navigation.navigate('Image3')}
+>
+<View style={styles.touchableButton1}>
+<Text style={styles.buttonText}>
+Continue
+</Text>
 </View>
-
-
+</TouchableHighlight>
+</View>
 
 
 
