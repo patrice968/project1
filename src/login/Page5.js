@@ -32,7 +32,7 @@ class Page5 extends React.Component {
 Thank You For Your Buisness
 </Text>
         <TouchableHighlight
-onPress={() => this.props.navigation.navigate('Homescreen')}
+onPress={() => this.props.navigation.navigate('Home')}
 >
 <View style={styles.touchableButton1}>
 <Text style={styles.buttonText}>
